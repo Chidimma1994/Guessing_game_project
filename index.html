@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesing Game Project</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="wrapper">
+            <div>
+                <h1>Guessing Game!</h1>
+    
+                <p class="p1">It's a fun way to relax your nerves after a long week...But you have just</p>
+                <span class="trials">3 TRIALS ONLY</span>
+    
+                <p class="p2">Guess a number between 1-100</p>
+            </div>
+            <div id="guessing_game_div">
+                <label for="guessing_game">
+                    <input type="number" id="guess" class="guessing_game_input" min="1" max="100" required>
+                </label>
+                <div id="guessing_game_btn" >
+                    <button>Guess</button>
+                    <button>Cancel</button>
+                </div>
+                <div id="result"  class="error success"></div>
+               
+            </div>
+            <div class="last_div">
+                <p class="p3">Total number of trail: 3</p>
+                <p class="p3">Number of times tried: 0</p>
+            </div>
+
+            
+        </div>
+       
+    </main>
+    <script src="./Script.js"></script>
+</body>
+
+</html>
